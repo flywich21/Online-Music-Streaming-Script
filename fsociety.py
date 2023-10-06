@@ -127,7 +127,7 @@ def main():
         playback_thread_instance = threading.Thread(target=playback_thread, args=(player, youtube_url))
         command_thread_instance = threading.Thread(target=command_thread, args=(player,))
 
-        # sart both threads
+        # start both threads
         playback_thread_instance.start()
         command_thread_instance.start()
 
